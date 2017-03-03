@@ -1,0 +1,15 @@
+{
+  "name": "preact-markdown",
+  "version": "0.0.0",
+  "description": "Markdown in Preact Markup",
+  "main": "index.js",
+  "files": [],
+  "repository": "preact-markdown",
+  "dependencies": {
+    "markdown": "^0.5.0",
+    "preact-markup": "^1.6.0"
+  },
+  "peer-dependencies": {
+    "preact": "*"
+  }
+}
