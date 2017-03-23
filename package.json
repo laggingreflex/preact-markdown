@@ -6,7 +6,7 @@
   "files": [],
   "repository": "preact-markdown",
   "dependencies": {
-    "markdown": "^0.5.0",
+    "marked": "^0.3.6",
     "preact-markup": "^1.6.0"
   },
   "peer-dependencies": {

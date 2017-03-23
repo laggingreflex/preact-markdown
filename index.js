@@ -1,18 +1,18 @@
 var h = require('preact').h
 var Markup = require('preact-markup')
-var toHTML = require('markdown').markdown.toHTML
+var marked = require('marked')
 
 module.exports = Markdown
 
 function Markdown(props) {
   if (typeof props === 'string') {
     return h(Markup, {
-      markup: toHTML(props),
+      markup: marked(props),
       trim: false,
     })
   } else if (props && props.markdown) {
     return h(Markup, Object.assign({
-      markup: toHTML(props.markdown),
+      markup: marked(props.markdown),
       trim: false,
     }, props))
   } else {

@@ -2,9 +2,9 @@
 
 [![npm](http://img.shields.io/npm/v/preact-markdown.svg)](https://www.npmjs.com/package/preact-markdown)
 
-[Markdown] in [Preact Markup]
+Markdown in [Preact Markup] using [Marked]
 
-[Markdown]: https://github.com/evilstreak/markdown-js
+[Marked]: https://github.com/chjj/marked
 [Preact Markup]: https://github.com/developit/preact-markup
 [hyperscript]: https://github.com/queckezz/preact-hyperscript
 
