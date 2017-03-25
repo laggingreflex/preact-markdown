@@ -9,11 +9,13 @@ function Markdown(props) {
     return h(Markup, {
       markup: marked(props),
       trim: false,
+      type: 'html',
     })
   } else if (props && props.markdown) {
     return h(Markup, Object.assign({
       markup: marked(props.markdown),
       trim: false,
+      type: 'html',
     }, props))
   } else {
     throw new Error('Invalid arguments. Markdown requires either a `<String>` or object: `{markdown: <String>}`')
