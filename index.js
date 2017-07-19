@@ -14,7 +14,7 @@ function Markdown(props, opts) {
       trim: false,
       type: 'html',
     }, opts.markupOpts))
-  } else if (props && props.markdown) {
+  } else if (props && typeof props.markdown === 'string') {
     var markupOpts = props.markupOpts || opts.markupOpts || {}
     var markdownOpts = props.markdownOpts || opts.markdownOpts || {}
     return h(Markup, Object.assign({
