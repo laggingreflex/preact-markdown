@@ -1,4 +1,4 @@
-var h = require('preact').h
+var preact = require('preact')
 var Markup = require('preact-markup')
 var marked = require('marked')
 
@@ -6,6 +6,7 @@ module.exports = Markdown
 
 function Markdown(props, opts) {
   opts = opts || {}
+  var h = opts.h || preact.h;
   if (typeof props === 'string') {
     var markupOpts = opts.markupOpts || {}
     var markdownOpts = opts.markdownOpts || {}
