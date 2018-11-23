@@ -3,7 +3,9 @@
   "version": "0.4.0",
   "description": "Markdown in Preact Markup",
   "main": "index.js",
-  "files": [],
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": "preact-markdown",
   "dependencies": {
     "marked": "^0.3.6",
@@ -11,5 +13,8 @@
   },
   "peer-dependencies": {
     "preact": "*"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }
