@@ -8,7 +8,7 @@
   },
   "repository": "preact-markdown",
   "dependencies": {
-    "marked": "^0.3.6",
+    "marked": "^0.6.2",
     "preact-markup": "^1.6.0"
   },
   "peer-dependencies": {
