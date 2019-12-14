@@ -1,13 +1,13 @@
-var preact = require('preact');
-var Markup = require('preact-markup');
-var marked = require('marked');
+const preact = require('preact');
+const Markup = require('preact-markup').default;
+const marked = require('marked');
 
 module.exports = Markdown;
 
 function Markdown(props, opts) {
   opts = opts || {};
-  var h = opts.h || preact.h;
-  var markdown, markupOpts, markdownOpts;
+  const h = opts.h || preact.h;
+  let markdown;
   if (typeof props === 'string') {
     markdown = props;
     props = {};
@@ -17,8 +17,9 @@ function Markdown(props, opts) {
     throw new Error('Invalid arguments. Markdown requires either a `<String>` or object: `{markdown: <String>}`');
   }
 
-  var markupOpts = props.markupOpts || opts.markupOpts || {};
-  var markdownOpts = props.markdownOpts || opts.markdownOpts || {};
+  const markupOpts = props.markupOpts || opts.markupOpts || {};
+  const markdownOpts = props.markdownOpts || opts.markdownOpts || {};
+
   return h(Markup, Object.assign({
     markup: marked(markdown, markdownOpts),
     trim: false,

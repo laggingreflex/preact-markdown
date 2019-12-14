@@ -6,15 +6,16 @@
   "scripts": {
     "test": "mocha"
   },
-  "repository": "preact-markdown",
+  "repository": "laggingreflex/preact-markdown",
   "dependencies": {
-    "marked": "^0.6.2",
-    "preact-markup": "^1.6.0"
+    "marked": "^0.8.0",
+    "preact-markup": "^2.0.0"
   },
   "peer-dependencies": {
-    "preact": "*"
+    "preact": "10.x"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "preact": "^10.1.0",
+    "mocha": "^6.2.2"
   }
 }
