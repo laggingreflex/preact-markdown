@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "preact": "^10.1.0",
-    "preact-markdown": "^1.0.0"
+    "preact-markdown": "^2.0.0"
   },
   "devDependencies": {
     "webpack": "^4.41.2",
