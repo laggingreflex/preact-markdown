@@ -18,10 +18,11 @@ function Markdown(props, opts) {
   }
 
   const markupOpts = props.markupOpts || opts.markupOpts || {};
-  const markdownOpts = props.markdownOpts || opts.markdownOpts || {};
+  const markedOpts = props.markedOpts || opts.markedOpts || props.markdownOpts || opts.markdownOpts || {};
+  if (props.markdownOpts || opts.markdownOpts) console.warn('DEPRECATED: `.markdownOpts` Use `.markedOpts`');
 
   return h(Markup, Object.assign({
-    markup: marked(markdown, markdownOpts),
+    markup: marked(markdown, markedOpts),
     trim: false,
     type: 'html',
   }, markupOpts));

@@ -19,15 +19,15 @@ npm i preact-markdown
 ```
 import Markdown from 'preact-markdown';
 
-render(<Markdown markdown={'**Hello** _World_!'} markupOpts={...} markdownOpts={...} />, document.body);
+render(<Markdown markdown={'**Hello** _World_!'} markupOpts={...} markedOpts={...} />, document.body);
 ```
 
 or [hyperscript] style:
 
 ```
-h(Markdown, {markdown: '**Hello** _World_!', markupOpts: {...}, markdownOpts: {...}})
+h(Markdown, {markdown: '**Hello** _World_!', markupOpts: {...}, markedOpts: {...}})
 
 // or simply:
-Markdown('**Hello** _World_!', {markupOpts:{...}, markdownOpts:{...}})
+Markdown('**Hello** _World_!', {markupOpts:{...}, markedOpts:{...}})
 
 ```
