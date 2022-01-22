@@ -8,14 +8,14 @@
   },
   "repository": "laggingreflex/preact-markdown",
   "dependencies": {
-    "marked": "^0.8.0",
-    "preact-markup": "^2.0.0"
+    "marked": "^4.0.10",
+    "preact-markup": "^2.1.1"
   },
   "peer-dependencies": {
     "preact": "10.x"
   },
   "devDependencies": {
-    "preact": "^10.1.0",
-    "mocha": "^6.2.2"
+    "mocha": "^8.1.3",
+    "preact": "^10.6.4"
   }
 }

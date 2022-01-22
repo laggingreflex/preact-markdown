@@ -1,6 +1,6 @@
 const preact = require('preact');
 const Markup = require('preact-markup').default;
-const marked = require('marked');
+const { marked } = require('marked');
 
 module.exports = Markdown;
 
